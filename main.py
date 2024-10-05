@@ -174,7 +174,7 @@ def update_system_log(activity, log):
         current_date_time_file = current_date_time.strftime("%Y-%m-%d")
 
         # Update log file.  If log file does not exist, create it:
-        with open("log_disapp_text_wrtg_app_" + current_date_time_file + ".txt", "a") as f:
+        with open("log_disapp_txt_wrtg_app_" + current_date_time_file + ".txt", "a") as f:
             f.write(datetime.now().strftime("%Y-%m-%d @ %I:%M %p") + ":\n")
             f.write(activity + ": " + log + "\n")
 
